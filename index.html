@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
   </head>
   <body>
     <style>
-  * {
+  #* {
     border: 1px red dashed;
+    text-decoration: none;
   }
 
   .thumbnails-image {
@@ -29,13 +31,18 @@
   padding-bottom: 40px;
   background: linear-gradient(180deg, #875ddc,#b0c0ed);
   color: rgba(255, 255, 255, 1.0);
+  font-family: "Impact";
 }
 
 .item {
-  background-color: rgba(174, 141, 244, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+  border-radius: 1000px;
+  padding: 5px;
+  padding-right: 53px;
+  box-shadow: 4px 4px 10px 0px rgba(122,32,122,0.5);
 }
 
 .main-container {
@@ -51,6 +58,10 @@
 .name-row {
   margin-bottom: 30px;
   text-align: center;
+  font-family: "Impact";
+  font-size: 48px;
+  font-weight: 900;
+  color: black
 }
 
 .social-icons-row {
@@ -60,7 +71,19 @@
 }
 
 .link-text {
-  text-align: center;
+  text-align: start;
+  margin-left:5px;
+  flex-grow: 1;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.item-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover; 
+
 }
 
 </style>
@@ -91,18 +114,34 @@
 
     <div class="links-row">
       <div class="item">
-        <img src="/thumbnails/yc.png">
+        <img src="/chl.png" class="item-image">
 
-        <a target="_blank" href="http://paulgraham.com/startupideas.html">
-          How to Get Startup Ideas
+        <a target="_blank" href="https://es.wikipedia.org/wiki/Historia_de_Chile" class="link-text">
+          A clear and comprehensive overview of Chile’s most important political, social, and economic milestones
         </a>
       </div>
 
       <div class="item">
-        <img src="/thumbnails/typography.jpg">
+        <img src="/Club_UC_1925.webp" class="item-image">
 
-        <a target="_blank" href="https://practicaltypography.com/typography-in-ten-minutes.html">
-          Typography in ten minutes
+        <a target="_blank" href="https://cruzados.cl/" class="link-text">
+         Discover the history, achievements, and current updates of Chile’s iconic Cruzados football club
+        </a>
+      </div>
+
+      <div class="item">
+        <img src="/booth.webp" class="item-image">
+
+        <a target="_blank" href="https://www.chicagobooth.edu/" class="link-text">
+          The University of Chicago’s world-class business school — a hub for critical thinking, leadership, and global impact
+        </a>
+      </div>
+
+      <div class="item">
+        <img src="/chicagi.png" class="item-image">
+
+        <a target="_blank" href="https://es.wikipedia.org/wiki/Chicago_Boys" class="link-text">
+          Learn about the group of Chilean economists trained at the University of Chicago who transformed the country’s economy
         </a>
       </div>
 
