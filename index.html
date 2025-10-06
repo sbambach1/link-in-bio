@@ -8,19 +8,28 @@
   * {
     border: 1px red dashed;
   }
+  .thumbnails-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; 
+    object-position: center;
+  }
+   .icon-image {
+    width: 50px;
+    height: 50px;
+  }
 </style>
-  <div class="main-container">
-    <div class="image-row">
-      <img src="/photo-1589656966895-2f33e7653819.avif" alt="Nice Polar Bear" width="150" height="150" style="border-radius: 50%; object-fit: cover; object-position: center;">
+  <div>
+    <div>
+      <img src="/photo-1589656966895-2f33e7653819.avif" alt="Nice Polar Bear" class="thumbnails-image">
     </div>
 
-    <div class="name-row">
-      Raghu Betina
-    </div>
+     <h1>The Cool Polar Bear</h1> 
 
-    <div class="social-icons-row">
-      <a href="https://github.com/raghubetina" target="_blank">
-        GitHub
+    <div>
+      <a href="https://github.com/" target="_blank">
+        <img src="/git.avif" alt="Github" class="icon-image">
       </a>
 
       <a href="https://www.linkedin.com/in/raghubetina/" target="_blank">
