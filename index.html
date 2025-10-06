@@ -2,12 +2,14 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <style>
   * {
     border: 1px red dashed;
   }
+
   .thumbnails-image {
     width: 150px;
     height: 150px;
@@ -15,10 +17,12 @@
     object-fit: cover; 
     object-position: center;
   }
+
    .icon-image {
     width: 50px;
     height: 50px;
   }
+
   body {
   min-height: 100%;
   padding-top: 40px;
@@ -27,15 +31,47 @@
   color: rgba(255, 255, 255, 1.0);
 }
 
+.item {
+  background-color: rgba(174, 141, 244, 0.5);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.main-container {
+  max-width: 640px;
+  margin: auto;
+}
+
+.image-row {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.name-row {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.social-icons-row {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.link-text {
+  text-align: center;
+}
+
 </style>
-  <div>
-    <div>
+  <div class="main-container">
+    <div class="image-row">
       <img src="/photo-1589656966895-2f33e7653819.avif" alt="Nice Polar Bear" class="thumbnails-image">
     </div>
 
-     <h1>The Cool Polar Bear</h1> 
+     <div class="name-row">The Cool Polar Bear</div> 
 
-    <div>
+    <div class="social-icons-row">
       <a href="https://github.com/" target="_blank">
         <img src="/git.avif" alt="Github" class="icon-image">
       </a>
@@ -70,10 +106,7 @@
         </a>
       </div>
 
-      <!-- Etc etc, for as many items as you want in your list -->
-
     </div> <!-- links-row -->
   </div> <!-- main-container -->
-    <!-- Your content will go here -->
   </body>
 </html>
